@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configure>
+	<appsettings>
+	<!-- 工厂模式 mysql,sqlserver -->
+		<add key="DB" value="MySql"/>
+		<add key="DB3" value="SqlServer"/>
+		<add key="ASSEMBLYNAME" value="factoryModel.abstractFactory.impl"/>
+	</appsettings>
+</configure>
