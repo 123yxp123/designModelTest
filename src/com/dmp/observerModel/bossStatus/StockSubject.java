@@ -23,7 +23,9 @@ public class StockSubject implements Subject{
 
 	@Override
 	public void notifyInfo() {
-		
+		for (Observer obs : observer) {
+			obs.update();
+		}
 	}
 
 	@Override
