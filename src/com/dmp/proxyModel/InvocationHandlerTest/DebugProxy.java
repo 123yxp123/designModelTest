@@ -15,6 +15,11 @@ public class DebugProxy implements InvocationHandler{
 	public DebugProxy(Object obj) {
 		this.obj = obj;
 	}
+	/**
+	 * 返回类实例
+	 * @param obj
+	 * @return
+	 */
 	public static Object newInstance(Object obj){
 		return Proxy.newProxyInstance(obj.getClass().getClassLoader(), obj.getClass().getInterfaces(), new DebugProxy(obj));
 	}
@@ -24,6 +29,7 @@ public class DebugProxy implements InvocationHandler{
 		Object result;
 		try {
 			System.out.println("myMethod before"+method.getName());
+			//注意为当前对象
 			result = method.invoke(obj, args);
 		} catch(InvocationTargetException ie){
 			throw ie.getTargetException();
