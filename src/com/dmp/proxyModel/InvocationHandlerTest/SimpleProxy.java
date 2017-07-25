@@ -1,6 +1,7 @@
 package proxyModel.InvocationHandlerTest;
 /**
- * 自己实现的简单代理模式
+ * 实现的简单代理模式
+ * 静态代理
  * @author yxp
  *
  */

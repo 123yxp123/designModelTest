@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 /**
  * 实现反射机制的代理，可以实现所需要的不太代理需求，并且功能更加丰富
+ * 动态代理
  * @author yxp
  *
  */
