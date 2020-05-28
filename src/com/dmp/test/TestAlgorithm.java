@@ -3,7 +3,7 @@ package test;
 public class TestAlgorithm {
 	public static void main(String[] args) {
 		int sum = add(5);
-		System.out.println(sum);
+		System.out.println("sum:"+sum);
 		int sum2 = add2(5);
 		System.out.println(sum2);
 	}
